@@ -1,0 +1,42 @@
+.carrito {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-img {
+    width: 80px;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+.cart-info {
+    flex: 1; /* toma el espacio disponible */
+    margin-right: 15px;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-controls button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.btn-pagar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}

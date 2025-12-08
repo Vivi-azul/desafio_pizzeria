@@ -1,0 +1,16 @@
+.header {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
