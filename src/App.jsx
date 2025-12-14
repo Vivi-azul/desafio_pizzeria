@@ -7,9 +7,10 @@ import CardPizza from './components/CardPizza';
 import Gallery from './components/Gallery';
 // import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './components/Home';
-import { pizzasImportadas } from './components/pizzas';
-import Cart from './components/Cart';
+// import Home from './components/Home';
+import { Pizzas } from "./components/Pizzas.jsx"
+// import { pizzasImportadas } from './components/pizzas';
+// import Cart from './components/Cart';
 
 
 // import Register from './components/Register';
@@ -19,13 +20,15 @@ function App() {
     const userToken = null;
     const carritoTotal = 25000;
 
-    const [pizzas, setPizzas] = useState(pizzasImportadas); 
+    // const [pizzas, setPizzas] = useState(pizzasImportadas); 
 
   return (
     <>
     
       <Navbar Token={userToken} Total={carritoTotal} titulo="Mamma Mia"/>
-      <Cart/>
+      {/* <Home/> */}
+      <Pizzas/>
+      {/* <Cart/> */}
 
       {/* <Header /> */}
     
