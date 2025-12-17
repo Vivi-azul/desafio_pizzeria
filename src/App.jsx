@@ -23,13 +23,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home/>
-      <Pizzas/>
+      {/* <Home/> */}
+      {/* <Pizzas/> */}
       {/* <Gallery /> */}
       {/* <CardPizza /> */}
-      <Cart/>
+      {/* <Cart/> */}
 
-      <Link />
+      {/* <Link /> */}
 
       {/* <Header /> */}
     
