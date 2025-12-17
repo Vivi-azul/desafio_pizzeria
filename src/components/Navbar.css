@@ -1,9 +1,9 @@
-.navbar {
+/* .navbar {
   display: flex;
   background-color: #1a1a1a;
   color: white;
   gap: 20px;
-}
+} */
 
 .nav-links {
     display: flex;
@@ -14,3 +14,22 @@
 .btn {
     margin-right: 20px;
 }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+  }
+
+  .menu {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cart {
+    font-weight: bold;
+    text-decoration: none
+  }

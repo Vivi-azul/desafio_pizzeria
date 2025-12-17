@@ -1,55 +1,55 @@
-import React, { useState } from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { useState } from 'react';
+import { Routes, Route, Link, Navigate } from "react-router-dom";
 import './App.css';
-import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CardPizza from './components/CardPizza';
-import Gallery from './components/Gallery';
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home.jsx';
+// import CardPizza from './components/CardPizza';
+// import Gallery from './components/Gallery';
 // import Header from './components/Header';
+import Pizzas from "./pages/Pizzas.jsx";
+import Profile from './pages/Profile.jsx';
+// import { pizzaCart } from './components/pizzas';
+import Cart from './pages/Cart.jsx';
+import Register from './pages/Register.jsx';
+import Login from './pages/Login.jsx';
+import NotFound from './pages/NotFound.jsx'
 import Footer from './components/Footer';
-// import Home from './components/Home';
-import { Pizzas } from "./components/Pizzas.jsx"
-// import { pizzasImportadas } from './components/pizzas';
-// import Cart from './components/Cart';
 
-
-// import Register from './components/Register';
-// import Login from './components/Login';
 
 function App() {
-    const userToken = null;
-    const carritoTotal = 25000;
-
-    // const [pizzas, setPizzas] = useState(pizzasImportadas); 
+    //  const [pizzas, setPizzas] = useState(pizzasImportadas); 
 
   return (
     <>
-    
-      <Navbar Token={userToken} Total={carritoTotal} titulo="Mamma Mia"/>
-      {/* <Home/> */}
+      <Navbar />
+      <Home/>
       <Pizzas/>
-      {/* <Cart/> */}
+      {/* <Gallery /> */}
+      {/* <CardPizza /> */}
+      <Cart/>
+
+      <Link />
 
       {/* <Header /> */}
     
     <Routes>
-      {/* <Route path="/" element={<Home pizzas={pizzas}/>} /> */}
-      {/* <Route path="/Cart" element={<Cart />} /> */}
+      <Route path="/" element={<Home />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/pizza/p001" element={<Pizzas />} />
+      <Route path='profile' element={<Profile />} />
+      <Route path='/404' element={< NotFound />} />
+      <Route path='*' element={<Navigate to="/404" />} />
 
-{/*           
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} /> */}
+    </Routes>
 
-      </Routes>
-
-
-      <Footer />
+    <Footer />
       
     </>
-
-    
 
   );
 }
 
-export default App
+export default App;

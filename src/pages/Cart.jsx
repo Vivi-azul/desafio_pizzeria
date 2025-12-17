@@ -1,5 +1,5 @@
 import React from 'react';
-import { pizzaCart } from './pizzas';
+import { pizzaCart } from '../components/pizzas';
 import './Cart.css';
 
 export default function Cart() {
